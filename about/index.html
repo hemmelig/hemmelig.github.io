@@ -19,67 +19,79 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="../assets/style.css">
 
+	<!-- Navbar stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../assets/offcanvas.css">
+
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 </head>
-<body class="text-center">
-	<div class="bg">
-		<nav class="navbar navbar-expand-lg navbar-dark dark-bg">
-		  <span class="navbar-brand">
-		  	<a id="nav-title" href="../">conor bacon</a>
-		  </span>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+	  <span class="navbar-brand">
+	  	<a id="nav-title" href="../">conor bacon</a>
+	  </span>
+	  <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+	  aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href=".">about</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="../publications/">publications</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="../blog/">blog</a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          teaching
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="../teaching/iamaths/">ia maths</a>
-		          <a class="dropdown-item" href="#">ia physics</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">ib physics a</a>
-		          <a class="dropdown-item" href="#">ib physics b</a>
-		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">iii physics of the earth as a planet</a>
-		        </div>
-		      </li>
-		    </ul>
-		    <a class="btn btn-social-icon btn-linkedin navbar-btn" href="https://www.linkedin.com/in/conor-bacon-25858111a/" target="_blank">
-				<span class="fab fa-linkedin"></span>
-			</a>
-			<a class="btn btn-social-icon btn-twitter navbar-btn" href="https://www.twitter.com" target="_blank">
-				<span class="fab fa-twitter"></span>
-			</a>
-			<a class="btn btn-social-icon btn-instagram navbar-btn" href="https://www.instagram.com/_hemmelig/" target="_blank">
-				<span class="fab fa-instagram"></span>
-			</a>
-		  </div>
-		</nav>
+	  <div class="navbar-collapse offcanvas-collapse navbar-light bg-light" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href=".">about</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="../research">research</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          teaching
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="../teaching/iamaths">ia maths</a>
+	          <!-- <div class="dropdown-divider"></div> -->
+	        </div>
+	      </li>
+	    </ul>
+	    <a class="btn btn-social-icon btn-linkedin navbar-btn" href="https://www.linkedin.com/in/conor-bacon-25858111a/" target="_blank">
+			<span class="fab fa-linkedin"></span>
+		</a>
+		<a class="btn btn-social-icon btn-twitter navbar-btn" href="https://www.twitter.com/Conor_nBOSS" target="_blank">
+			<span class="fab fa-twitter"></span>
+		</a>
+		<a class="btn btn-social-icon btn-instagram navbar-btn" href="https://www.instagram.com/_hemmelig/" target="_blank">
+			<span class="fab fa-instagram"></span>
+		</a>
+	  </div>
+	</nav>
 
-		<div class="content">
-			<div class="container">
-				
-			</div>
+	<section class="py-5">
+	  <div class="container">
+		<div class="content about-content">
+			<div class="container-fluid about-container row">
+				<div class="profile-pic-wrapper col-md-4 col-12">
+					<img id="profile-pic" src="../assets/profile.JPG">
+				</div>
+				<div class="about-text col-md-8 col-12">
+					<h1>about</h1>
+					<p>I am a PhD candidate in the Department of Earth Sciences, University of Cambridge. The focus of my research is seismic anisotropy in the crust and mantle. I am working on the north Borneo Orogeny Seismic Survey (nBOSS) project </p>
+				</div>	
+			</div>			
 		</div>
-
+	  </div>
+	  <div class="container">
+	  	<div id="instafeed"></div><!-- 
+	  <div id="instafeed" class="gallery row no-gutter"></div> -->
 	</div>
+	</section>
+
+
+
+	<section class="footer-link"><span>&copy; conor bacon, 2019</span></section>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="../assets/offcanvas.js"></script>
 </body>
 </html>

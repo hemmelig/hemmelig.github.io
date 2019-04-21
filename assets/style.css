@@ -1,29 +1,34 @@
 html, body {
-  	height: 100%;
+	margin: 0;
+	padding: 0;
+  	height: 100vh;
+  	width: 100%;
 }
 
 a, a:active, a:focus {
    outline: none;
 }
 
+/* 
+##########################
+###   Navbar content   ###
+##########################
+*/
+
 #nav-title {
 	text-decoration: none;
-	color: white;
+	color: gray;
 }
 
 .navbar-brand {
 	font-family: 'Raleway', sans-serif;
 	font-size: 25px;
 	margin-right: 15px;
-	color: white;
+	color: gray;
 }
 
-.navbar {
-	background-color: rgb(66, 66, 66);
-}
 
 .navbar, a {
-	color: white;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -36,91 +41,127 @@ a, a:active, a:focus {
 	color: white;
 }
 
-.title-container {
-	padding-left: 0px;
+/*
+##########################
+*/
+
+ .main-wrapper {
+	height: calc(100%)
+	width: 100%;
+	background-color: rgba (166, 166, 166, 0.4);
 }
 
-#splash-title {
-	display: flex;
-	justify-content: center;
+/*
+##########################
+###   Splash content   ###
+##########################
+*/
+
+section{
+	width:100%;
+	float:left;
 }
 
-#splash-title > h1 {
-	padding: 5px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: lighter;
+.post-title-block{
+	padding: 100px 0;
 }
 
-.content {
-	display: flex;
-	align-items: flex-end;
-	height: 85vh;
+.post-title-block h1 {
+	color: #fff;
+	font-size: 85px;
+	font-weight: bold;
+	text-transform: capitalize;
 }
 
-.splash-bg {
-    /* The image used */
-	background: url('glacier-splash.jpg') no-repeat center center fixed; /*Photo by Cyrill Hänni on Unsplash*/
+.post-title-block li{
+	font-size: 20px;
+	color: #fff;
+}
 
-    /* Full height */
-    height: 100%;
+.image-block{
+	float: left;
+	width: 100%; margin-bottom:10px;
+}
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
- 	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
- }
+.footer-link{
+	float: left;
+	width: 100%; 
+	background: #222222;
+	text-align: center;
+	padding: 15px;
+}
 
- .splash-bg:after {
- 	background-color: rgba(66, 66, 66, 1);
- }
-
- .bg {
- 	height: 100%;
-
- 	background-color: rgba(166, 166, 166, 0.3);
- }
-
-.container-fluid > h1 {
-	font-family: 'Raleway', sans-serif;
+.footer-link span{
 	color: white;
-
-	-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 3s; /* Firefox < 16 */
-    -ms-animation: fadein 3s; /* Internet Explorer */
-    -o-animation: fadein 3s; /* Opera < 12.1 */
-    animation: fadein 3s;
+	font-size:14px;
 }
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1;}
+.masthead {
+  height: 30%;
+  min-height: 500px;
+  background-image: url('eruption-splash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1;}
+.masthead h1 {
+	color: white;
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1;}
+ /*
+##########################
+*/
+
+.about-content {
+	height: 100%;
+	padding: 5% 5% 10% 5%;
+	font-family: 'Raleway', sans-serif;
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1;}
+.about-container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+.about-text p {
+	font-size: 18px;
 }
 
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1;}
+.blog-container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.blog-section-title {
+	width: 100%;
+	padding: 0;
+	padding-left: 5%;
+	margin: 0;
+	display: flex;
+}
+
+.blog-content {
+	height: 100%;
+	width: 100%;
+	padding: 5% 5% 10% 5%;
+}
+
+.card {
+	margin: 1% 1% 1% 1%;
+	padding: 0;	
+}
+
+.card-text {
+	font-size: 12px;
+}
+
+.card-title {
+	font-size: 16px;
 }
 
 /* 
@@ -140,29 +181,182 @@ Bootstrap 4 breakpoints
 */
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
-.container-fluid, h1 {font-size:2.5rem;} /*1rem = 16px*/
-#splash-title {justify-content: flex-end;}
-.container-fluid {margin-right: 3.5em;}
+	.container-fluid, h1 {
+		font-size:2.5rem;
+		} /*1rem = 16px*/
+	#splash-title {
+		justify-content: flex-end;
+	}
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-.container-fluid, h1 {font-size:3rem;} /*1rem = 16px*/
+	.container-fluid, h1 {
+		font-size:3rem;
+		} /*1rem = 16px*/
+	.splash-content {
+		padding: 10% 10% 5% 10%;
+	}
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-.container-fluid, h1 {font-size:3.5rem;} /*1rem = 16px*/
+	.container-fluid, h1 {
+		font-size:3.5rem;
+		} /*1rem = 16px*/
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-.container-fluid, h1 {font-size:4rem;} /*1rem = 16px*/    
+	.container-fluid, h1 {
+		font-size:4rem;
+		} /*1rem = 16px*/    
 }
 
-#profile_image {
+#profile-pic {
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	width: 400px
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	border-radius: 10px;
 }
+
+.profile-pic-wrapper {
+	width: 350px;
+	border: 0;
+	padding: 0;
+}
+
+.about-text {
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+body {
+  font-family: 'Lato', "Helvetica", Arial, sans-serif;
+}
+
+/* remove bootstrap gutter*/
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+/* the good stuff */
+body {
+}
+
+.img-featured-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-featured-container img {
+  width: 100%;
+/*   padding: 10px; */
+}
+
+.img-featured-container .img-backdrop {
+  background: linear-gradient(135deg, rgba(38, 163, 255, 0.85), rgba(83, 201, 179, 0.85));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.img-featured-container:hover > .img-backdrop {
+  opacity: 1;
+}
+
+/* center text horizontally and vertically on image hover */
+.img-featured-container .description-container {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  z-index: 2;
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.img-featured-container .description-container .fa-instagram {
+  font-size: 40px;
+}
+
+.img-featured-container .description-container p {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.img-featured-container:hover .description-container {
+  opacity: 1;
+}
+
+.img-featured-container .description-container .caption {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.img-featured-container .description-container .likes,
+.img-featured-container .description-container .comments {
+  margin: 0 5px;
+}
+
+.photos a {
+    width: calc(100%/3);
+    height: calc(100%/3);
+}
+
+/* media queries  */
+@media screen and (min-width:768px) {
+  .img-featured-container .description-container .caption {
+    display: block;
+  }
+}
+
+
+#instafeed {
+  max-width:1080px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+  a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    background: white;
+    
+    @media only screen and (min-width: $lg) {
+      width: 25%;
+    }
+    
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
