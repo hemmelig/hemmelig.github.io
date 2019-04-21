@@ -1,55 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  {% include head.html %}
-</head>
-<body>
+---
+layout: default
+title: "Conor Bacon: Home Page"
+header_title: Conor Bacon
+nav_item: home
+---
 
-	<header class="masthead">
-	  <div class="container h-100">
-	    <div class="row h-100 align-items-center">
-	      <div class="col-12 text-center">
-	        <h1 class="font-weight-light">Holuhraun, Iceland</h1>
-	      </div>
-	    </div>
-	  </div>
-	</header>
-
-	<section class="py-5">
-	  <div class="container">
-	    <h2 class="font-weight-light">Page Content</h2>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-	  </div>
-	  <div class="container">
-	  	<div id="instafeed" class="photos"></div>
-	  </div>
-	</section>
-
-	<section class="footer-link"><span>&copy; conor bacon, 2019</span></section>
-
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<script src="assets/offcanvas.js"></script>
-	<script type="text/javascript" src="assets/instafeed.min.js"></script>
-      
-	<script type="text/javascript">
-		var feed = new Instafeed({
-		  get: "user",
-		  userId: 2347607581,
-		  accessToken: "2347607581.c8e096b.b037b738dcdb4a8580d21f847155ca76",
-		  resolution: "standard_resolution",
-		  useHttp: "true",
-		  limit: 3,
-		  template: '<div class="col-xs-12 col-sm-6 col-md-4"><a href="{{link}}"><div class="img-featured-container"><div class="img-backdrop"></div><div class="description-container"><p class="caption">{{caption}}</p><span class="likes"><i class="icon ion-heart"></i> {{likes}}</span><span class="comments"><i class="icon ion-chatbubble"></i> {{comments}}</span></div><img src="{{image}}" class="img-responsive"></div></a></div>',
-		  target: "instafeed",
-		});
-		feed.run();
-	</script>
-      
-</body>
-</html>
+{% include home.html %}

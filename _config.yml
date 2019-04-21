@@ -1,14 +1,42 @@
+# Website settings 
+url: "http://hemmelig.github.io"
+
+# Internal nav
+nav:
+  main:
+    about: "/about"
+    writing: "/writing"
+    research: "/research"
+    teaching: "/teaching"
+
+# Bio settings
+name: "Conor Bacon"
+description: "The home page of Conor Bacon, PhD student at the University of Cambridge"
+website_repo_url: "https://github.com/hemmelig/conor-bacon-homepage"
+
+# URLs
+contact_urls:
+  twitter:
+    url: "https://twitter.com/Conor_nBOSS"
+    label: "Twitter"
+    icon: "twitter-square"
+    username: "@Conor_nBOSS"
+  linkedin:
+    url: "https://www.linkedin.com/in/conor-bacon-25858111a/"
+    label: "LinkedIn"
+    icon: "linkedin-square"
+  github:
+    url: "https://github.com/hemmelig"
+    label: "GitHub"
+    icon: "github-square"
+
+# Jekyll build settings
+paginate: 10
+paginate_path: "/writing/page:num"
+permalink: "/writing/:year/:month/:day/:title/"
+repository: hemmelig/conor-bacon-homepage
+
 plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - CONTRIBUTING.md
-  - README.md
-  - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate
