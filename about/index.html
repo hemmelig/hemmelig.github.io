@@ -26,24 +26,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg fixed-top navbar-dark dark-bg text-center">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
 	  <span class="navbar-brand">
 	  	<a id="nav-title" href="../">conor bacon</a>
 	  </span>
-	  <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="navbar-collapse">
+	  <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+	  aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 
-	  <div class="navbar-collapse offcanvas-collapse" id="navbarSupportedContent">
+	  <div class="navbar-collapse offcanvas-collapse navbar-light bg-light" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
+	      <li class="nav-item">
 	        <a class="nav-link" href=".">about</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="../research/">research</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="../blog/">blog</a>
+	        <a class="nav-link" href="../research">research</a>
 	      </li>
 	      <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,7 +65,8 @@
 	  </div>
 	</nav>
 
-	<main class="main-wrapper">
+	<section class="py-5">
+	  <div class="container">
 		<div class="content about-content">
 			<div class="container-fluid about-container row">
 				<div class="profile-pic-wrapper col-md-4 col-12">
@@ -75,11 +74,20 @@
 				</div>
 				<div class="about-text col-md-8 col-12">
 					<h1>about</h1>
-					<p>wagwan blud</p>
+					<p>I am a PhD candidate in the Department of Earth Sciences, University of Cambridge. The focus of my research is seismic anisotropy in the crust and mantle. I am working on the north Borneo Orogeny Seismic Survey (nBOSS) project </p>
 				</div>	
 			</div>			
 		</div>
-	</main>
+	  </div>
+	  <div class="container">
+	  	<div id="instafeed"></div><!-- 
+	  <div id="instafeed" class="gallery row no-gutter"></div> -->
+	</div>
+	</section>
+
+
+
+	<section class="footer-link"><span>&copy; conor bacon, 2019</span></section>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
