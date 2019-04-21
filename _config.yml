@@ -4,7 +4,6 @@ url: "http://hemmelig.github.io"
 # Internal nav
 nav:
   main:
-    about: "/about"
     writing: "/writing"
     research: "/research"
     teaching: "/teaching"
