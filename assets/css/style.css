@@ -27,7 +27,6 @@ a, a:active, a:focus {
 	color: gray;
 }
 
-
 .navbar, a {
 	font-family: 'Raleway', sans-serif;
 }
@@ -46,7 +45,7 @@ a, a:active, a:focus {
 */
 
  .main-wrapper {
-	height: calc(100%)
+	height: calc(100%);
 	width: 100%;
 	background-color: rgba (166, 166, 166, 0.4);
 }
@@ -57,7 +56,7 @@ a, a:active, a:focus {
 ##########################
 */
 
-section{
+section {
 	width:100%;
 	float:left;
 }
@@ -98,10 +97,10 @@ section{
 
 .masthead {
   height: 30%;
-  min-height: 500px;
-  background-image: url('/assets/images/eruption-splash.jpg');
+  min-height: 900px;
+  background-image: url('/assets/images/askja_viti.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 0px -100px;
   background-repeat: no-repeat;
 }
 
@@ -116,7 +115,9 @@ section{
 .about-content {
 	height: 100%;
 	padding: 5% 5% 10% 5%;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .about-container {
@@ -127,41 +128,6 @@ section{
 }
 .about-text p {
 	font-size: 18px;
-}
-
-.blog-container {
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	justify-content: space-around;
-}
-
-.blog-section-title {
-	width: 100%;
-	padding: 0;
-	padding-left: 5%;
-	margin: 0;
-	display: flex;
-}
-
-.blog-content {
-	height: 100%;
-	width: 100%;
-	padding: 5% 5% 10% 5%;
-}
-
-.card {
-	margin: 1% 1% 1% 1%;
-	padding: 0;	
-}
-
-.card-text {
-	font-size: 12px;
-}
-
-.card-title {
-	font-size: 16px;
 }
 
 /* 
@@ -180,12 +146,15 @@ M E D I A  Q U E R I E S
 Bootstrap 4 breakpoints
 */
 /* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {  
+@media (min-width: 400px) {  
 	.container-fluid, h1 {
 		font-size:2.5rem;
 		} /*1rem = 16px*/
 	#splash-title {
 		justify-content: flex-end;
+	}
+	.masthead {
+		background-position: -300px -100px;
 	}
 }
  
@@ -196,6 +165,9 @@ Bootstrap 4 breakpoints
 		} /*1rem = 16px*/
 	.splash-content {
 		padding: 10% 10% 5% 10%;
+	}
+	.masthead {
+		background-position: 0px -100px;
 	}
 }
  
@@ -217,12 +189,12 @@ Bootstrap 4 breakpoints
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 80%;
+	width: 100%;
 	border-radius: 10px;
 }
 
 .profile-pic-wrapper {
-	width: 350px;
+	width: 500px;
 	border: 0;
 	padding: 0;
 }
@@ -251,8 +223,8 @@ body {
 
 
 /* the good stuff */
-body {
-}
+/* body {
+} */
 
 .img-featured-container {
   overflow: hidden;
@@ -334,29 +306,14 @@ body {
   }
 }
 
+/*
+##########################
+###    Post outline    ###
+##########################
+*/
 
-#instafeed {
-  max-width:1080px;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  
-  a {
+.post-outline {
     display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    width: 50%;
-    background: white;
-    
-    @media only screen and (min-width: $lg) {
-      width: 25%;
-    }
-    
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
 }
-
