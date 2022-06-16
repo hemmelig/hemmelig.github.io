@@ -199,6 +199,15 @@ Bootstrap 4 breakpoints
 	padding: 0;
 }
 
+.content-pic-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+	border: 0;
+	padding: 0;
+}
+
 .about-text {
 	padding-left: 50px;
 	padding-top: 50px;
