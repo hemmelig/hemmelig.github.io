@@ -5,11 +5,12 @@ url: "http://hemmelig.github.io"
 nav:
   main:
     research: "/research"
+    software: "/software"
 
 # Bio settings
 name: "Conor Bacon"
 description: "The home page of Conor Bacon, post-doctoral research associate at Columbia University"
-website_repo_url: "https://github.com/hemmelig/conor-bacon-homepage"
+website_repo_url: "https://github.com/hemmelig/hemmelig.github.io"
 
 # URLs
 contact_urls:
@@ -23,11 +24,22 @@ contact_urls:
     label: "GitHub"
     icon: "github-square"
 
-# # Jekyll build settings
-# paginate: 10
-# paginate_path: "/writing/page:num"
-# permalink: "/writing/:year/:month/:day/:title/"
-# repository: hemmelig/conor-bacon-homepage
+# Read files
+include:
+  - _pages
+  - files
+exclude:
+  - Gemfile
+  - README.md
+  - .gitignore
+keep_files:
+  - .git
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:path/
 
 plugins:
   - jekyll-redirect-from
