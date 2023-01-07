@@ -82,6 +82,10 @@ section {
 	width: 100%; margin-bottom:10px;
 }
 
+.container-home {
+	max-width: 100% !important;
+}
+
 .footer-link{
 	float: left;
 	width: 100%; 
@@ -95,26 +99,11 @@ section {
 	font-size:14px;
 }
 
-.masthead {
-  height: 30%;
-  min-height: 900px;
-  background-image: url('/assets/images/askja_viti.jpg');
-  background-size: cover;
-  background-position: 0px -100px;
-  background-repeat: no-repeat;
-}
-
-.masthead h1 {
-	color: white;
-}
-
  /*
 ##########################
 */
 
 .about-content {
-	height: 100%;
-	padding: 5% 5% 10% 5%;
 	font-family: 'Open Sans', sans-serif;
 	text-align: justify;
 	text-justify: inter-word;
@@ -191,6 +180,7 @@ Bootstrap 4 breakpoints
 	align-items: center;
 	width: 100%;
 	border-radius: 10px;
+	border: 5px solid #333
 }
 
 .profile-pic-wrapper {
@@ -208,9 +198,26 @@ Bootstrap 4 breakpoints
 	padding: 0;
 }
 
+.software-summary-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border-radius: 10px;
+	border: 5px solid #666
+}
+
+.research-summary-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border-radius: 10px;
+	border: 5px solid #ddd
+}
+
 .about-text {
-	padding-left: 50px;
-	padding-top: 50px;
+	padding-top: 25px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
