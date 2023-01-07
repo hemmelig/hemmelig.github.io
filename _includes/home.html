@@ -31,16 +31,36 @@
                         Currently...
                     </p>
                     <p>
-                        ...interested in: systems theory, interfaces, Ukrainian literature/history/politics, surrealism, analogue sound, bouldering.
+                        ...interested in: 
+                        {% for interest in page.interests %}
+                            {%- if forloop.length > 0 -%}
+                                {{ interest }}{% unless forloop.last %} - {% endunless -%}
+                            {%- endif -%}
+                        {% endfor %}
                     </p>
                     <p>
-                        ...reading: The Gates of Europe: A History of Ukraine; Rise of Endymion; Shadows of the Apt series.
+                        ...reading: 
+                        {% for book in page.books %}
+                            {%- if forloop.length > 0 -%}
+                                {{ book }}{% unless forloop.last %} - {% endunless -%}
+                            {%- endif -%}
+                        {% endfor %}
                     </p>
                     <p>
-                        ...listening to things like: <a href="https://www.youtube.com/watch?v=_IFtJ-XTXF8">this</a>; <a href="https://www.youtube.com/watch?v=Dm4HUjunhQU">this</a>; <a href="https://www.youtube.com/watch?v=THM4fUdz8Mc">this</a>; <a href="https://www.youtube.com/watch?v=ujLBD9pFPtY">this</a>; and <a href="https://www.youtube.com/watch?v=Y6A_Czw8TFU">this</a>.
+                        ...listening to things like:
+                        {% for beat in page.beats %}
+                            {%- if forloop.length > 0 -%}
+                            <a href="https://www.youtube.com/watch?v={{ beat }}">this</a>{% unless forloop.last %} - {% endunless -%}
+                            {%- endif -%}
+                        {% endfor %}
                     </p>
                     <p>
-                        ...learning: Russian; Rust; chess (badly).
+                        ...learning:
+                        {% for thing in page.learning %}
+                            {%- if forloop.length > 0 -%}
+                                {{ thing }}{% unless forloop.last %} - {% endunless -%}
+                            {%- endif -%}
+                        {% endfor %}
                     </p>
                     <p>
                         Free and open science is the future.
