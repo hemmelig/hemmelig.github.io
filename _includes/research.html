@@ -1,27 +1,43 @@
 <section class="py-5">
     <div class="container">
         <div class="content about-content">
-            <h1>Research</h1>
+            <h2>Research</h2>
             <hr>
-            <p>You can also find me on <a href="https://scholar.google.com/citations?user=02Lc7pEAAAAJ&hl=en">Google
-                    scholar</a>.</p>
-            <h2>2022</h2>
+            <p>
+                {% for year in site.research-work %}
+                    <a href="#{{ year[0] }}">{{ year[0] }}</a> - 
+                {% endfor %}
+                <a href="{{ site.contact_urls.google-scholar.url }}">Google scholar</a>
+            </p>
+            {% for year in site.research-work %}
+                <h3 id="{{ year[0] }}">{{ year[0] }}</h3>
+                <hr />
+                {% for research-item in year[1] %}
+                    <div class="container-fluid about-container row p-2">
+                        <div class="content-pic-wrapper col-md-5 col-12">
+                            <img class="research-summary-img" src="/assets/images/research/{{ research-item[1].img }}">
+                        </div>
+                        <div class="about-text col-md-7 col-12">
+                            <h4>
+                                {{ research-item[1].title }}
+                            </h4>
+                            <hr>
+                            <p>
+                                <b>Cite as:</b><br />
+                                <code class="citation language-css">
+                                    {{ research-item[1].citation }}
+                                </code>
+                            </p>
+                            <p><b>DOI:</b> <a href="https://doi.org/{{ research-item[1].doi }}">{{ research-item[1].doi }}</a></p>
+                            {% if research-item[1].code-link %}
+                                <p><b>Code:</b> <a href="{{ research-item[1].code-link }}">GitHub repository</a></p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <hr style="width: 50%;" />
+                {% endfor %}
+            {% endfor %}
             <hr>
-            {% include research_snippets/2022/s00445-022-01603-2.html %}
-            <p> </p>
-            {% include research_snippets/2022/2022GL099123.html %}
-            <p> </p>
-            {% include research_snippets/2022/s41598-022-13896-6.html %}
-            <p> </p>
-            {% include research_snippets/2022/2022GC010564.html %}
-            <p> </p>
-            {% include research_snippets/2022/2021JB022655.html %}
-            <hr>
-            <h2>2021</h2>
-            <hr>
-            {% include research_snippets/2021/thesis21.html %}
-            <p> </p>
-
         </div>
     </div>
 </section>
