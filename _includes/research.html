@@ -4,12 +4,12 @@
             <h2>Research</h2>
             <hr>
             <p>
-                {% for year in site.research-work %}
+                {% for year in page.works %}
                     <a href="#{{ year[0] }}">{{ year[0] }}</a> - 
                 {% endfor %}
                 <a href="{{ site.contact_urls.google-scholar.url }}">Google scholar</a>
             </p>
-            {% for year in site.research-work %}
+            {% for year in page.works %}
                 <h3 id="{{ year[0] }}">{{ year[0] }}</h3>
                 <hr />
                 {% for research-item in year[1] %}
@@ -28,9 +28,13 @@
                                     {{ research-item[1].citation }}
                                 </code>
                             </p>
-                            <p><b>DOI:</b> <a href="https://doi.org/{{ research-item[1].doi }}">{{ research-item[1].doi }}</a></p>
+                            <p>
+                                <b>DOI:</b> <a href="https://doi.org/{{ research-item[1].doi }}">{{ research-item[1].doi }}</a>
+                            </p>
                             {% if research-item[1].code-link %}
-                                <p><b>Code:</b> <a href="{{ research-item[1].code-link }}">GitHub repository</a></p>
+                                <p>
+                                    <b>Code:</b> <a href="{{ research-item[1].code-link }}">GitHub repository</a>
+                                </p>
                             {% endif %}
                         </div>
                     </div>
