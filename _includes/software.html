@@ -1,55 +1,35 @@
 <section class="py-5">
     <div class="container">
         <div class="content about-content">
-            <h1>Software</h1>
+            <h2>Software</h2>
             <hr>
-            <p>I share all my code through my <a
-                    href="https://scholar.google.com/citations?user=02Lc7pEAAAAJ&hl=en">GitHub account</a>.</p>
-            <div class="container-fluid about-container row">
-                <div class="content-pic-wrapper col-md-5 col-12">
-                    <img id="profile-pic"
-                        src="https://raw.githubusercontent.com/QuakeMigrate/QuakeMigrate/master/docs/img/QMlogoBig_rounded.png">
+            {% for software-item in page.works %}
+                <div class="container-fluid about-container row">
+                    <div class="content-pic-wrapper col-md-5 col-12">
+                        <a href="{{ software-item[1].repo }}"><img class="software-summary-img" src="{{ software-item[1].img }}"></a>
+                    </div>
+                    <div class="about-text col-md-7 col-12">
+                        <h3>{{ software-item[1].title }}</h3>
+                        <hr>
+                        <p>
+                            {{ software-item[1].description }}
+                        </p>
+                        {% if software-item[1].doi %}
+                            <p>
+                                DOI (code): <a href="https://doi.org/{{ software-item[1].doi }}">{{ software-item[1].doi }}</a>
+                            </p>
+                        {% else %}
+                            <p>
+                                DOI (code): to come
+                            </p>
+                        {% endif %}
+                        <p>
+                            GitHub repo: <a href="{{ software-item[1].repo }}">here</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="about-text col-md-7 col-12">
-                    <h3>QuakeMigrate</h3>
-                    <hr>
-                    <p>Automatic earthquake detection and location using waveform migration and stacking.</p>
-
-                    <p>DOI (code): <a href="https://doi.org/10.5281/zenodo.4442749">10.5281/zenodo.4442749</a></p>
-                    <p>GitHub repo: <a href="https://github.com/QuakeMigrate/QuakeMigrate">here</a></p>
-                </div>
-            </div>
-            <p> </p>
-            <div class="container-fluid about-container row">
-                <div class="content-pic-wrapper col-md-5 col-12">
-                    <img id="profile-pic"
-                        src="https://raw.githubusercontent.com/hemmelig/AnisotroPy/main/docs/img/AnilogoBig.png">
-                </div>
-                <div class="about-text col-md-7 col-12">
-                    <h3>AnisotroPy</h3>
-                    <hr>
-                    <p>Toolkit for the study of seismic anisotropy.</p>
-
-                    <p>DOI (code): <a href="https://doi.org/10.5281/zenodo.5931586">10.5281/zenodo.5931586</a></p>
-                    <p>GitHub repo: <a href="https://github.com/hemmelig/AnisotroPy">here</a></p>
-                </div>
-            </div>
-            <p> </p>
-            <div class="container-fluid about-container row">
-                <div class="content-pic-wrapper col-md-5 col-12">
-                    <img id="profile-pic"
-                        src="https://raw.githubusercontent.com/hemmelig/AnisotropIO/main/docs/img/anisotropio_logo.png">
-                </div>
-                <div class="about-text col-md-7 col-12">
-                    <h3>AnisotropIO</h3>
-                    <hr>
-                    <p>Toolkit for interfacing with shear-wave splitting codes.</p>
-
-                    <p>DOI (code): to come</p>
-                    <p>GitHub repo: <a href="https://github.com/hemmelig/AnisotropIO">here</a></p>
-                </div>
-            </div>
-
+            {% endfor %}
+            <hr />
         </div>
     </div>
 </section>
