@@ -10,3 +10,5 @@ end
 Encoding.default_external = Encoding::UTF_8
 
 gem 'liquid'
+
+gem "webrick", "~> 1.7"
