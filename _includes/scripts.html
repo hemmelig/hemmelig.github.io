@@ -8,21 +8,12 @@
 </script>
 
 <script type="text/javascript">
-  function copyTextToClipboard(el) {
-      navigator.clipboard.writeText(el.textContent);
-  }
-
-  function sleep(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-  }
-
-  const copyCitation = document.querySelector('.js-copy-citation');
-  copyCitation.addEventListener('click', async function(event) {
-      const idToGet = "#citation-" + this.id.split("--")[1]
-      const el = document.querySelector(idToGet)
-      copyTextToClipboard(el);
-      copyCitation.textContent = "Copied!";
+  async function copyTextToClipboard(el) {
+    const idToGet = "#citation-" + el.id.split("--")[1]
+      const citationEl = document.querySelector(idToGet)
+      navigator.clipboard.writeText(citationEl.textContent);
+      el.textContent = "Copied!";
       await sleep(1500);
-      copyCitation.textContent = "Cite as (click to copy):";
-  });
+      el.textContent = "Cite as (click to copy):";
+  }
 </script>
