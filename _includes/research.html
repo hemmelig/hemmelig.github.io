@@ -1,47 +1,49 @@
-<section class="py-5">
-    <div class="container">
-        <div class="content about-content">
-            <h2>Research</h2>
-            <hr>
-            <p>
-                {% for year in page.works %}
-                    <a href="#{{ year[0] }}">{{ year[0] }}</a> - 
-                {% endfor %}
-                <a href="{{ site.contact_urls.google-scholar.url }}">Google scholar</a>
-            </p>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-10 col-sm-10 col-md-8 col-xl-7">
+        <h2>Research</h2>
+        <hr />
+        <h4>
             {% for year in page.works %}
-                <h3 id="{{ year[0] }}">{{ year[0] }}</h3>
-                <hr />
-                {% for research-item in year[1] %}
-                    <div class="container-fluid about-container row p-2">
-                        <div class="content-pic-wrapper col-md-5 col-12">
-                            <img class="research-summary-img" src="/assets/images/research/{{ research-item[1].img }}">
-                        </div>
-                        <div class="about-text col-md-7 col-12">
-                            <h4>
-                                {{ research-item[1].title }}
-                            </h4>
-                            <hr>
-                            <p>
-                                <b>Cite as:</b><br />
-                                <code class="citation language-css">
-                                    {{ research-item[1].citation }}
-                                </code>
-                            </p>
-                            <p>
-                                <b>DOI:</b> <a href="https://doi.org/{{ research-item[1].doi }}">{{ research-item[1].doi }}</a>
-                            </p>
-                            {% if research-item[1].code-link %}
-                                <p>
-                                    <b>Code:</b> <a href="{{ research-item[1].code-link }}">GitHub repository</a>
-                                </p>
-                            {% endif %}
-                        </div>
-                    </div>
-                    <hr style="width: 50%;" />
-                {% endfor %}
+                <a href="#{{ year[0] }}">{{ year[0] }}</a> - 
             {% endfor %}
-            <hr>
-        </div>
+            <a href="{{ site.contact_urls.google-scholar.url }}">Google scholar</a>
+        </h4>
+        <hr />
+        {% for year in page.works %}
+            <h3 id="{{ year[0] }}">{{ year[0] }}</h3>
+            <hr />
+            {% for research-item in year[1] %}
+                <div class="row p-2">
+                    <div class="content-pic-wrapper col-lg-5 col-12 p-2">
+                        <img class="research-summary-img" src="/assets/images/research/{{ research-item[1].img }}">
+                    </div>
+                    <div class="col-lg-7 col-12 p-2">
+                        <h4>
+                            {{ research-item[1].title }}
+                        </h4>
+                        <hr />
+                        <p>
+                            <button class="js-copy-citation btn btn-light" id="citation-btn--{{ research-item[0] }}">Cite as (click to copy):</button>
+                            <br />
+                            <code class="citation language-css" id="citation-{{ research-item[0] }}">
+                                {{ research-item[1].citation }}
+                            </code>
+                        </p>
+                        <p>
+                            DOI: <a href="https://doi.org/{{ research-item[1].doi }}">{{ research-item[1].doi }}</a>
+                        </p>
+                        {% if research-item[1].code-link %}
+                            <p>
+                                <b>Code:</b> <a href="{{ research-item[1].code-link }}">GitHub repository</a>
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>
+                <hr style="width: 50%; margin: auto;" />
+            {% endfor %}
+        {% endfor %}
+        <hr />
     </div>
-</section>
+    <div class="col"></div>
+</div>

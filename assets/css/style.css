@@ -7,6 +7,7 @@ html, body {
 
 a, a:active, a:focus {
    outline: none;
+   text-decoration: None !important;
 }
 
 /* 
@@ -17,14 +18,18 @@ a, a:active, a:focus {
 
 #nav-title {
 	text-decoration: none;
-	color: gray;
+	color: #ddd;
+}
+
+.btn-social-icon {
+	background:white !important;
 }
 
 .navbar-brand {
 	font-family: 'Raleway', sans-serif;
 	font-size: 25px;
 	margin-right: 15px;
-	color: gray;
+	color: #ddd;
 }
 
 .navbar, a {
@@ -103,20 +108,23 @@ section {
 ##########################
 */
 
-.about-content {
+.content {
 	font-family: 'Open Sans', sans-serif;
 	text-align: justify;
 	text-justify: inter-word;
+	min-width: 100%;
+}
+.content p {
+	font-size: 1.2rem;
 }
 
-.about-container {
-	width: 100%;
-	padding: 0;
-	margin: 0;
+.container {
+	width: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	border: 0 !important;
 	display: flex;
-}
-.about-text p {
-	font-size: 18px;
+	max-width: 100% !important;
 }
 
 /* 
@@ -360,4 +368,8 @@ pre[class*="language-"] button {
 	padding: 10px 10px;
 	font-size: 0.8rem;
 	color:#222222;
+}
+
+.js-copy-citation {
+	font-weight: 600;
 }

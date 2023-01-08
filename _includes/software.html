@@ -1,35 +1,35 @@
-<section class="py-5">
-    <div class="container">
-        <div class="content about-content">
-            <h2>Software</h2>
-            <hr>
-            {% for software-item in page.works %}
-                <div class="container-fluid about-container row">
-                    <div class="content-pic-wrapper col-md-5 col-12">
-                        <a href="{{ software-item[1].repo }}"><img class="software-summary-img" src="{{ software-item[1].img }}"></a>
-                    </div>
-                    <div class="about-text col-md-7 col-12">
-                        <h3>{{ software-item[1].title }}</h3>
-                        <hr>
-                        <p>
-                            {{ software-item[1].description }}
-                        </p>
-                        {% if software-item[1].doi %}
-                            <p>
-                                DOI (code): <a href="https://doi.org/{{ software-item[1].doi }}">{{ software-item[1].doi }}</a>
-                            </p>
-                        {% else %}
-                            <p>
-                                DOI (code): to come
-                            </p>
-                        {% endif %}
-                        <p>
-                            GitHub repo: <a href="{{ software-item[1].repo }}">here</a>
-                        </p>
-                    </div>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-10 col-sm-10 col-md-8 col-xl-7">
+        <h2>Software</h2>
+        <hr />
+        {% for software-item in page.works %}
+            <div class="row p-2">
+                <div class="content-pic-wrapper col-md-5 col-12">
+                    <a href="{{ software-item[1].repo }}"><img class="software-summary-img" src="{{ software-item[1].img }}"></a>
                 </div>
-            {% endfor %}
-            <hr />
-        </div>
+                <div class="col-md-7 col-12">
+                    <h3>{{ software-item[1].title }}</h3>
+                    <hr />
+                    <p>
+                        {{ software-item[1].description }}
+                    </p>
+                    {%- if software-item[1].doi -%}
+                        <p>
+                            DOI (code): <a href="https://doi.org/{{ software-item[1].doi }}">{{ software-item[1].doi }}</a>
+                        </p>
+                    {%- else -%}
+                        <p>
+                            DOI (code): to come
+                        </p>
+                    {%- endif -%}
+                    <p>
+                        GitHub repo: <a href="{{ software-item[1].repo }}">here</a>
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+        <hr />
     </div>
-</section>
+    <div class="col"></div>
+</div>
