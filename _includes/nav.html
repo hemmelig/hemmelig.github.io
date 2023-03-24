@@ -1,25 +1,18 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-  <span class="navbar-brand">
-    <a id="nav-title" href="{{ site.url }}">conor bacon</a>
-  </span>
-  <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg fixed-top">
+  <button class="navbar-toggler mx-3" type="button" data-toggle="offcanvas" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="navbar-collapse offcanvas-collapse navbar-dark bg-dark" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="navbar-collapse justify-content-center offcanvas-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.url }}">//about</a>
+      </li>
       {% for nav_item in site.nav.main %}
       <li class="nav-item">
-        <a class="nav-link" href="{{ nav_item[1] }}">{{ nav_item[0] }}</a>
+        <a class="nav-link" href="{{ nav_item[1] }}">//{{ nav_item[0] }}</a>
       </li>
       {% endfor %}
     </ul>
-    <a class="btn btn-social-icon btn-twitter navbar-btn" href="{{ site.contact_urls.twitter.url }}" target="_blank">
-      <span class="fab fa-twitter"></span>
-    </a>
-    <a class="btn btn-social-icon btn-github navbar-btn" href="{{ site.contact_urls.github.url }}" target="_blank">
-      <span class="fab fa-github"></span>
-    </a>
   </div>
 </nav>
