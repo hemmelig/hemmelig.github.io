@@ -1,0 +1,88 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "AV",
+                "Station": "CLCL",
+                "Instruments": [
+                    "Seismometer",
+                    "Webcam"
+                ],
+                "Elevation": 0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -170.02417,
+                    52.8827
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "AV",
+                "Station": "CLCO",
+                "Instruments": [
+                    "BGAN",
+                    "Infrasound",
+                    "Seismometer",
+                    "Webcam"
+                ],
+                "Elevation": 0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -169.7229,
+                    52.7866
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "AV",
+                "Station": "CLNE",
+                "Instruments": [
+                    "GNSS",
+                    "IR camera",
+                    "Magnetometer",
+                    "Scanning DOAS",
+                    "Seismometer",
+                    "Weather",
+                    "Webcam"
+                ],
+                "Elevation": 0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -169.922345,
+                    52.842481
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "AV",
+                "Station": "CLSF",
+                "Instruments": [
+                    "Magnetometer",
+                    "Seismometer"
+                ],
+                "Elevation": 0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -169.928134,
+                    52.793592
+                ],
+                "type": "Point"
+            }
+        }
+    ]
+}

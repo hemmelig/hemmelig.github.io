@@ -167,7 +167,23 @@ body, .navbar, .footer-link, .tab-link, .nav-link {
 	background-color: var(--background-color);
 }
 
-.content a {
+.content-text a {
 	color: var(--content-link-color)!important;
 	font-weight: bold;
+}
+
+.map-container {
+	width: 100%;
+	height: 700px;
+	z-index: 0;
+}
+
+.map {
+	height: 100%;
+	border-radius: 10px;
+	border: 5px solid var(--profile-picture-border-color);
+}
+
+.map-data h4 {
+	color: black;
 }

@@ -1,0 +1,725 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "ASK",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 955.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.6481,
+                    65.0519
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "BRUN",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 536.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.866,
+                    65.2046
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "DDAL",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 801.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.9334,
+                    65.0774
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "DNGA",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 955.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.6481,
+                    65.0519
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "DREK",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 820.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.597,
+                    65.0494
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "DYSA",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 688.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.6755,
+                    64.9349
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "FJAS",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 798.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -17.0922,
+                    65.0247
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "FLAT",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 728.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.498,
+                    65.1828
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "HELI",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 491.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.2184,
+                    65.1988
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "HETO",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 581.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.317,
+                    65.1287
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "HOTT",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 718.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.5298,
+                    65.0475
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "HRUR",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 697.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.6755,
+                    65.1558
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "JONS",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 1174.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.8057,
+                    65.0775
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "KATT",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 885.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.9634,
+                    64.999
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "KLUR",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 1114.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.7532,
+                    65.0753
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "KOLL",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 593.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.5673,
+                    65.2902
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "LIND",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 726.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.4523,
+                    64.8528
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "LOGR",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 730.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.8233,
+                    65.1584
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "LOKT",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 630.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.9151,
+                    65.1362
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "MIDF",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 572.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.3296,
+                    65.0868
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "MKO",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 690.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.3383,
+                    64.9784
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "MOFO",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 702.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.6512,
+                    64.9844
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "MVET",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 1160.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.8126,
+                    65.0135
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "MYVO",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 639.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.369,
+                    65.1555
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "NAUG",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 697.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.5728,
+                    65.0202
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "NAUT",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 692.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.5733,
+                    65.0207
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "NOHR",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 826.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.9495,
+                    64.9339
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "OSKV",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 1209.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.7016,
+                    65.0393
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "RIFR",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 657.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.3713,
+                    64.9153
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "RIMA",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 748.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.885,
+                    64.9019
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "RODG",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 1022.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.8864,
+                    64.9851
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "SOSU",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 805.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.8543,
+                    64.9419
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "STAM",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 1171.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.8096,
+                    64.9969
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "SVAD",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 680.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.575,
+                    65.1175
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "TOHR",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 715.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.7847,
+                    64.9166
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "TOLI",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 528.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.1195,
+                    65.1034
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "UTYR",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 623.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.3187,
+                    65.0361
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "VADA",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 673.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.5382,
+                    64.9949
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "VIFE",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 696.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.4935,
+                    65.0845
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "8K",
+                "Station": "VIKS",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 641.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.4136,
+                    65.0601
+                ],
+                "type": "Point"
+            }
+        }
+    ]
+}

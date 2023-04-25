@@ -1,0 +1,82 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "AV",
+                "Station": "OKAK",
+                "Instruments": [
+                    "GNSS",
+                    "Seismometer"
+                ],
+                "Elevation": 0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -168.36,
+                    53.4113
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "AV",
+                "Station": "OKBR",
+                "Instruments": [
+                    "GNSS",
+                    "Magnetometer",
+                    "Seismometer"
+                ],
+                "Elevation": 0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -168.07471,
+                    53.41915
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "AV",
+                "Station": "OKCF",
+                "Instruments": [
+                    "Seismometer",
+                    "Webcam"
+                ],
+                "Elevation": 0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -168.1382,
+                    53.3948
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "AV",
+                "Station": "OKWE",
+                "Instruments": [
+                    "Magnetometer",
+                    "Seismometer"
+                ],
+                "Elevation": 0.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -168.2418,
+                    53.4711
+                ],
+                "type": "Point"
+            }
+        }
+    ]
+  }

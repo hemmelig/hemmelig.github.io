@@ -1,0 +1,36 @@
+{% for region in page.regions %}
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="map-container p-4">
+                <div class="map" id="map-{{ region[0] }}"></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="map-description content-text p-5">
+                <h2>{{ region[1].full_name }}</h2>
+                <p>     {{ region[1].years }}</p>
+                <hr/>
+                <h4>{{ region[1].project }}</h4>
+                <p>
+                    {{ region[1].description}}
+                </p>
+                <p><a href="{{ region[1].read_more }}">Read more</a></p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script><script src="/assets/js/leaflet_utils.js"></script>
+{% for region in page.regions %}
+<script type="text/javascript">
+    var id = "{{ region[0] }}"
+    var longitude = "{{ region[1].longitude }}"
+    var latitude = "{{ region[1].latitude }}"
+    var zoom_level = "{{ region[1].zoom_level }}"
+    var network_data = "{{ site.url }}{{ region[1].network_data }}"
+    var marker_size = "{{ region[1].marker_size }}"
+
+    var map = add_basemap(id, latitude, longitude, zoom_level)
+    add_station_layer(map, network_data, marker_size)
+</script>
+{% endfor %}

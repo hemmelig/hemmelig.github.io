@@ -6,6 +6,7 @@ nav:
   main:
     research: "/research"
     software: "/software"
+    maps: "/maps"
 
 # Bio settings
 name: "Conor Bacon"
@@ -39,9 +40,9 @@ keep_files:
 
 # Collections
 collections:
-  publications:
+  projects:
     output: true
-    permalink: /:collection/:path/
+    permalink: /projects/:name
 
 plugins:
   - jekyll-redirect-from
