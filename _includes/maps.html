@@ -27,7 +27,7 @@
     var longitude = "{{ region[1].longitude }}"
     var latitude = "{{ region[1].latitude }}"
     var zoom_level = "{{ region[1].zoom_level }}"
-    var network_data = "{{ site.url }}{{ region[1].network_data }}"
+    var network_data = "{{ region[1].network_data }}"
     var marker_size = "{{ region[1].marker_size }}"
 
     var map = add_basemap(id, latitude, longitude, zoom_level)
