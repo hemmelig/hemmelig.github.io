@@ -1,0 +1,311 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "ASCM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 1146.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.824057,
+                    65.027062
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "DJCM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 805.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.937300,
+                    65.077420
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "DYCM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 949.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.651652,
+                    65.055606
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "HECM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 1162.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.815425,
+                    65.042473
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "KACM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 1108.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.751196,
+                    65.063123
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "MOCM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 707.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.650965,
+                    64.984567
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "OGCM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 1126.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.770642,
+                    65.046840
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "OLCM",
+                "Instruments": [
+                    "Seismometer"
+                ],
+                "Elevation": 1127.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.796814,
+                    65.038470
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "RICM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 658.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.384976,
+                    64.923885
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "STCM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 1171.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.809139,
+                    64.996798
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "VTCM",
+                "Instruments": [
+                    "Low-cost Magnetometer"
+                ],
+                "Elevation": 1108.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.734244,
+                    65.046909
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "DYFM",
+                "Instruments": [
+                    "Magnetometer"
+                ],
+                "Elevation": 949.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.651652,
+                    65.055606
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "KAFM",
+                "Instruments": [
+                    "Magnetometer"
+                ],
+                "Elevation": 1108.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.751196,
+                    65.063123
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "MOFM",
+                "Instruments": [
+                    "Magnetometer"
+                ],
+                "Elevation": 704.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.650785,
+                    64.984583
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "OLFM",
+                "Instruments": [
+                    "Magnetometer"
+                ],
+                "Elevation": 1130.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.796926,
+                    65.038479
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "RIFM",
+                "Instruments": [
+                    "Magnetometer"
+                ],
+                "Elevation": 658.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.384976,
+                    64.923885
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Network": "",
+                "Station": "STFM",
+                "Instruments": [
+                    "Magnetometer"
+                ],
+                "Elevation": 1171.0
+            },
+            "geometry": {
+                "coordinates": [
+                    -16.809139,
+                    64.996798
+                ],
+                "type": "Point"
+            }
+        }
+    ]
+}
